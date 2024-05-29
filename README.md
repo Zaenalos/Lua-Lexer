@@ -24,5 +24,5 @@ local code = [=[print("Hello World")]=];
 
 
 local tokens = Tokenizer(code);
--- This will return a table.
+-- This will return a table of tokens which you can parse into AST.
 ```
