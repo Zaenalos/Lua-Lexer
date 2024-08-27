@@ -1,5 +1,3 @@
----
-
 # 📜 Lua-Lexer
 
 **Lua-Lexer** is a lightweight lexer (tokenizer) for the Lua programming language. It breaks down Lua code into a series of tokens, providing a foundational tool for building an Abstract Syntax Tree (AST) or performing code analysis.
@@ -53,5 +51,3 @@ Contributions are welcome! If you have ideas for new features or improvements, f
 ## 📜 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
