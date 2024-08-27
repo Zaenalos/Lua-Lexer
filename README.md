@@ -1,28 +1,57 @@
-# Lua-Lexer
-A basic Lua Lexer I've written, basically a Tokenizer.
+---
 
-You can use this Lexer/Tokenizer as a stepping stone building your AST.
+# 📜 Lua-Lexer
 
+**Lua-Lexer** is a lightweight lexer (tokenizer) for the Lua programming language. It breaks down Lua code into a series of tokens, providing a foundational tool for building an Abstract Syntax Tree (AST) or performing code analysis.
 
-Feel free to commit if you want to add changes.
+## ✨ Features
 
+- Simple and easy-to-use Lua lexer.
+- Converts Lua source code into tokens.
+- Perfect for building custom parsers or AST generators.
 
-You can clone this repository by typing this command in your terminal.
+## 🚀 Getting Started
 
-```git clone https://github.com/Zaenalos/Lua-Lexer```
+To get started with Lua-Lexer, clone the repository by running the following command in your terminal:
 
-
-
-# How to use?
-After cloning the repo, you can create a new file and require the ```Tokenizer.lua```
-
-
+```sh
+git clone https://github.com/Zaenalos/Lua-Lexer
 ```
-local Tokenizer = require("Tokenizer");
 
-local code = [=[print("Hello World")]=];
+## 📦 Installation and Usage
 
+After cloning the repository, you can start using the lexer in your Lua projects. Follow the steps below:
 
-local tokens = Tokenizer(code);
--- This will return a table of tokens which you can parse into AST.
-```
+1. **Require the `Tokenizer` module** in your Lua script:
+
+   ```lua
+   local Tokenizer = require("Tokenizer")
+   ```
+
+2. **Pass your Lua code to the `Tokenizer`**:
+
+   ```lua
+   local code = [=[print("Hello World")]=]
+   local tokens = Tokenizer(code)
+   ```
+
+3. **Use the tokens for further processing**:
+
+   ```lua
+   -- `tokens` is a table containing the parsed tokens from the Lua code
+   for _, token in ipairs(tokens) do
+       print(token.type, token.value)
+   end
+   ```
+
+The `Tokenizer` function will return a table of tokens that you can use to build an AST or analyze the code further.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have ideas for new features or improvements, feel free to fork the repository and submit a pull request. Let's make Lua-Lexer better together!
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
